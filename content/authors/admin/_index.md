@@ -33,7 +33,7 @@ profiles:
   - icon: at-symbol
     url: 'mailto:matias.kacto@gmail.com'
     label: E-mail Me
-  - icon: custom.researchgate
+  - icon: custom/researchgate
     url: https://www.researchgate.net/profile/Matias-Koehler
     label: Check my profile at Research Gate
   - icon: brands/x
