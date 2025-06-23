@@ -33,6 +33,9 @@ profiles:
   - icon: at-symbol
     url: 'mailto:matias.kacto@gmail.com'
     label: E-mail Me
+  - icon: custom.researchgate
+    url: https://www.researchgate.net/profile/Matias-Koehler
+    label: Check my profile at Research Gate
   - icon: brands/x
     url: https://x.com/tunasdelsur
     label: Find me at X (rarely used)
