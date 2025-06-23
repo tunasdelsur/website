@@ -5,8 +5,8 @@ authors:
 - Lucas C. Majure
 - Alan R. Franck
 - Keron C. St. E. Campbell
-date: -01-01
-publishDate: '2025-06-23T22:35:27.489128Z'
+date: 2025-06-23
+publishDate: '2025-06-23'
 publication_types:
 - article-journal
 publication: '*TAXON*'
