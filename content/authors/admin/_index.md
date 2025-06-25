@@ -59,6 +59,7 @@ interests:
   - Plant Biogeography
   - Plant Nomenclature
   - Plant Diversification
+  - Plant Ecology
   - Economic Botany
   - People and Plants
   - As you see, it’s all about plants 😁
