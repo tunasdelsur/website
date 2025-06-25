@@ -61,7 +61,7 @@ interests:
   - Plant Diversification
   - Economic Botany
   - People and Plants
-  - As you can see, it’s all about plants 😁
+  - As you see, it’s all about plants 😁
 
 education:
   - area: PhD in Botany
