@@ -43,4 +43,7 @@ links:
 - name: URL
   url: https://www.scielo.br/j/hoehnea/a/4MWf4rCgQyMVgp4xbPKVp4c/?lang=pt
 url_pdf: https://www.scielo.br/j/hoehnea/a/4MWf4rCgQyMVgp4xbPKVp4c/?format=pdf&lang=pt
+
+image:
+  caption: ' Participants of the Nomenclature Section of the XX International Botanical Congress (Madrid, Spain, 2024). Photo David García Herráez'
 ---
