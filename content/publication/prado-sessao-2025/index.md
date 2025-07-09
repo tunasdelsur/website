@@ -12,7 +12,7 @@ authors:
 - Ana Paula Fortuna-Perez
 - Leandro Lacerda Giacomin
 - Milton Groppo
-- Matias Köhler
+- admin
 - Otávio Luis Marques da Silva
 - Thiago Cobra e Monteiro
 - Gustavo Hiroaki Shimizu
@@ -22,10 +22,7 @@ publication_types:
 - article-journal
 publication: '*Hoehnea*'
 doi: https://doi.org/10.1590/2236-8906e762024
-abstract: (A Sessão de Nomenclatura de Madri e as principais modificações para a nova
-  versão do Código Internacional de Nomenclatura para Algas, Fungos e Plantas - Código
-  de Madri). do Código Internacional de Nomenclatura para Algas, Fungos e Plantas
-  - Código de Madri). Apresentamos as principais decisões e modificações que serão
+abstract: Apresentamos as principais decisões e modificações que serão
   introduzidas no Código de Madri, aceitas durante a Sessão de Nomenclatura do XX
   Congresso Internacional de Botânica realizado em Madri, Espanha, em julho de 2024.
   Entre as principais modificações estão a criação de um mecanismo para registro voluntário
@@ -39,11 +36,11 @@ abstract: (A Sessão de Nomenclatura de Madri e as principais modificações par
   nos próximos seis anos.Palavras-chave:comitês para propósitos especiais; nomenclatura;
   propostas; registro de nomes
 tags:
-- comitês para propósitos especiais
-- nomenclatura
-- propostas
-- registro de nomes
+- Plant Nomenclature
+- Botanical Code
+
 links:
 - name: URL
   url: https://www.scielo.br/j/hoehnea/a/4MWf4rCgQyMVgp4xbPKVp4c/?lang=pt
+url_pdf: https://www.scielo.br/j/hoehnea/a/4MWf4rCgQyMVgp4xbPKVp4c/?format=pdf&lang=pt
 ---
