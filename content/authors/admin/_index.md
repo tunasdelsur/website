@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Assistant Professor | Professor Adjunto
+role: Assistant Professor | Professor Assistente
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -185,4 +185,4 @@ languages:
 ---
 
 ## Hello & Welcome to My Page!!
-I am an evolutionary biologist best defined as a Botanist. I am currently an Assistant Professor at the Universidade Federal da Fronteira Sul (Erechim, Rio Grande do Sul 🇧🇷). My research focuses on the evolutionary relationships of plants using molecular phylogenetic methods, as well as morphology, cytology, and ecological data to address questions related to biogeographic history, community assembly and diversification, morphological and genome evolution, species origin, and species boundaries within groups. You will find more information browsing this page (under construction), and if you have any questions, don’t hesitate to contact me!
+I am an evolutionary biologist best defined as a Botanist. I am currently an Assistant Professor at the Universidade Federal da Fronteira Sul (RS, Brazil). My research focuses on the evolutionary relationships of plants using molecular phylogenetic methods, as well as morphology, cytology, and ecological data to address questions related to biogeographic history, community assembly, diversification, morphological and genome evolution, species origin, and species boundaries within groups. You will find more information browsing this page (under construction), and if you have any questions, don’t hesitate to contact me!
