@@ -9,7 +9,7 @@ authors:
 - Paula Leão Ferreira
 - Monique Romeiro-Brito
 - Milena C. Telhe
-- Matias Köhler
+- admin
 - Fernando F. Franco
 - Evandro M. Moraes
 date: '2024-01-01'

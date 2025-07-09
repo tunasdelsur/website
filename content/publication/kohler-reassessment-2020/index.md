@@ -2,7 +2,7 @@
 title: Reassessment and typification of Opuntia canterae (Opuntioideae, Cactaceae),
   an endemic prickly pear cactus of Uruguay
 authors:
-- Matias Köhler
+- admin
 - Lucas C. Majure
 date: '2020-07-01'
 publishDate: '2025-06-23T21:27:00.363768Z'

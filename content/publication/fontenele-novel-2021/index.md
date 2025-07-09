@@ -3,7 +3,7 @@ title: Novel circular DNA virus identified in Opuntia discolor (Cactaceae) that 
   for proteins with similarity to those of geminiviruses
 authors:
 - Rafaela S. Fontenele
-- Matias Köhler
+- admin
 - Lucas C. Majure
 - Jesús A. Avalos-Calleros
 - Gerardo R. Argüello-Astorga

@@ -2,7 +2,7 @@
 title: 'Opuntia leoglossa sp. nov. (Cactaceae): a new identity for the aloctone “Lion’s
   Tongue” cactus'
 authors:
-- Matias Köhler
+- admin
 - Fabián Font
 date: '2021-07-01'
 publishDate: '2025-06-23T21:27:00.443280Z'

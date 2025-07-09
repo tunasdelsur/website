@@ -1,7 +1,7 @@
 ---
 title: 'O educar-se no campo: caneta, enxada e botânica camponesa'
 authors:
-- Matias Köhler
+- admin
 - Estela Santos
 - Cristiane Giaretta
 - Gilmar Gomes

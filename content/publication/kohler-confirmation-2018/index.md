@@ -2,7 +2,7 @@
 title: 'Confirmation of Aloysia dusenii Moldenke (Verbenaceae) for South Brazil: implications
   for conservation'
 authors:
-- Matias Köhler
+- admin
 - Cassio Rabuske da Silva
 - Paulo Brack
 date: '2018-05-01'

@@ -2,7 +2,7 @@
 title: 'On the continuum of evolution: a putative new hybrid speciation event in Opuntia
   (Cactaceae) between a native and an introduced species in southern South America'
 authors:
-- Matias Köhler
+- admin
 - 'Luis J., Oakley '
 - 'Fabián, Font '
 - 'M. Laura Las, Peñas '

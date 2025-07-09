@@ -2,7 +2,7 @@
 title: '“That’s Opuntia, that was!”, again: a new combination for an old and enigmatic
   Opuntia s.l. (Cactaceae)'
 authors:
-- Matias Köhler
+- admin
 - Fabián Font
 - Raul Puente-Martinez
 - Lucas Charles Majure

@@ -14,7 +14,7 @@ authors:
 - Kendal Smith
 - Joshua Schreck
 - Michael C. Lund
-- Matias Köhler
+- admin
 - Martin F. Wojciechowski
 - Wendy C. Hodgson
 - Raul Puente-Martinez

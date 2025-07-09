@@ -2,7 +2,7 @@
 title: 'Frutas nativas do Rio Grande do Sul, Brasil: riqueza e potencial alimentício'
 authors:
 - Paulo Brack
-- Matias Köhler
+- admin
 - Claudine Abreu Corrêa
 - Rodrigo Endres Ardissone
 - Marcos Eduardo Guerra Sobral

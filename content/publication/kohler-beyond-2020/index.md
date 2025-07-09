@@ -2,7 +2,7 @@
 title: 'Beyond endemism, expanding conservation efforts: What can new distribution
   records reveal?'
 authors:
-- Matias Köhler
+- admin
 - Luíz F. Esser
 - Fabián Font
 - Tatiana T. Souza-Chies

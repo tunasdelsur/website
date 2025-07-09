@@ -1,7 +1,7 @@
 ---
 title: 'Frutas Nativas no Rio Grande do Sul: cultivando e valorizando a diversidade'
 authors:
-- M. Köhler
+- admin
 - P. Brack
 date: '2018-01-01'
 publishDate: '2025-06-23T21:27:00.350622Z'

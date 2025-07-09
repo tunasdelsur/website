@@ -2,7 +2,7 @@
 title: Seed size correlation with phytotoxic effects of Baccharis psiadioides essential
   oil during seeds germination
 authors:
-- M. Köhler
+- admin
 - J. Schwambach
 - G.L.G. Soares
 date: '2018-01-01'
