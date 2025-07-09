@@ -1,5 +1,5 @@
 ---
-title: '*Pilosocereus cristalinensis* should not be regarded as conspecific with *P. machrisii* (Cereeae, Cactaceae)'
+title: Pilosocereus cristalinensis should not be regarded as conspecific with P. machrisii (Cereeae, Cactaceae)
 authors:
 - Fabricio O. Pereira
 - admin
