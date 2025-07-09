@@ -27,4 +27,5 @@ tags:
 url_pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/tax.13365
 image:
   caption: 'Taxon 74(3), 2025 (https://onlinelibrary.wiley.com/cms/asset/dfb9c655-9769-4547-a01c-ecbdcaf0db0a/tax.v74.3.cover.jpg)' 
+  focal_point: ""
 ---
