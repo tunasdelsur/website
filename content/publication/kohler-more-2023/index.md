@@ -52,5 +52,5 @@ tags:
 links:
 - name: URL
   url: https://doi.org/10.1093/aob/mcad098
-  url_pdf: https://academic.oup.com/aob/article-pdf/132/4/771/56315813/mcad098.pdf
+url_pdf: https://academic.oup.com/aob/article-pdf/132/4/771/56315813/mcad098.pdf
 ---
