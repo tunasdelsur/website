@@ -35,7 +35,11 @@ tags:
 - frutíferas nativas
 - PANC
 - plantas alimentícias
+- Economic Botany
+
 links:
 - name: URL
   url: https://www.scielo.br/j/rod/a/JpWKrZKkFy8hGXYdNLqDwzr/
+url_pdf: https://www.scielo.br/j/rod/a/JpWKrZKkFy8hGXYdNLqDwzr/?format=pdf&lang=pt
+
 ---
