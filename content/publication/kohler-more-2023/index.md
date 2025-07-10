@@ -45,7 +45,12 @@ abstract: Plastid genomes (plastomes) have long been recognized as highly conser
   and ambitious endeavour in cactus research. Although plastome data resolved major
   phylogenetic relationships, the generation of nuclear genomic data is necessary
   to confront these hypotheses and assess the recalcitrant nodes further.
+tags:
+- Plant Evolution
+- Plant Diversification
+- Cactaceae
 links:
 - name: URL
   url: https://doi.org/10.1093/aob/mcad098
+  url_pdf: https://academic.oup.com/aob/article-pdf/132/4/771/56315813/mcad098.pdf
 ---
