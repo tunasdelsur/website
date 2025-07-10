@@ -35,14 +35,21 @@ abstract: Opuntioideae, composed of roughly 370 species, occur in almost every b
   Flattened stems are synapomorphic for Opuntieae, possibly representing adaptation
   to competition for light resources in SDTF, their most likely ancestral area.
 tags:
-- textitAustrocylindropuntia
-- textitCylindropuntia
-- textitOpuntia
+- Austrocylindropuntia
+- Cylindropuntia
+- Opuntia
 - biogeography
 - CAM photosynthesis
 - phylogenomics
 - seasonally dry tropical forests
+- Plant Systematics
+- Plant Evolution
+- Plant Biogeography
+- Plant Diversification
+- Plant Ecology
+
 links:
 - name: URL
   url: https://www.mdpi.com/1424-2818/15/4/570
+url_pdf: https://www.mdpi.com/1424-2818/15/4/570/pdf?version=1681812809
 ---
