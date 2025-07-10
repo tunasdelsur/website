@@ -36,7 +36,7 @@ tags:
 - PANC
 - plantas alimentícias
 - Economic Botany
-
+- People and Plants
 links:
 - name: URL
   url: https://www.scielo.br/j/rod/a/JpWKrZKkFy8hGXYdNLqDwzr/
