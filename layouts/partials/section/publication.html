@@ -1,0 +1,8 @@
+{{ $counter := 0 }}
+{{ range sort .Pages.ByDate "Date" }}
+  {{ $counter = add $counter 1 }}
+  <div class="pub-item">
+    <strong>{{ $counter }}.</strong>
+    {{ partial "publication_li.html" . }}
+  </div>
+{{ end }}
