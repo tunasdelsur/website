@@ -1,1 +1,4 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+{{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "css.html" . }}
+{{ end }}
