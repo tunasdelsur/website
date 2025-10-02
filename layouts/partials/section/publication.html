@@ -1,8 +1,55 @@
-{{ $counter := 0 }}
-{{ range sort .Pages.ByDate "Date" }}
-  {{ $counter = add $counter 1 }}
-  <div class="pub-item">
-    <strong>{{ $counter }}.</strong>
-    {{ partial "publication_li.html" . }}
+{{ $counter := 0 }} {{ $pubs := where .Site.RegularPages "Section" "publication"
+}} {{ $pubs = $pubs.ByDate.Reverse }} {{ range $pubs }} {{ $counter = add
+$counter 1 }}
+<div class="pub-list-item" style="margin-bottom: 2rem">
+  <div class="article-metadata">
+    <strong style="font-size: 1rem; margin-right: 0.5rem"
+      >{{ $counter }}.</strong
+    >
+    {{ range $index, $author := .Params.authors }} {{ if gt $index 0 }}, {{ end
+    }} {{ if eq . "admin" }}
+    <strong>Matias Köhler</strong>
+    {{ else }} {{ . }} {{ end }} {{ end }} {{ with .Date }} ({{ dateFormat
+    "2006" . }}){{ end }}.
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>. {{ with .Params.publication
+    }}<em>{{ . | markdownify }}</em>{{ end }}
   </div>
+  <div class="btn-links" style="margin-top: 0.5rem">
+    {{ with .Params.url_pdf }}
+    <a
+      class="btn btn-outline-primary btn-page-header btn-sm"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener"
+    >
+      <i class="far fa-file-pdf"></i> PDF
+    </a>
+    {{ end }}
+    <a
+      class="btn btn-outline-primary btn-page-header btn-sm"
+      href="{{ .RelPermalink }}"
+    >
+      <i class="fas fa-quote-right"></i> CITE
+    </a>
+    {{ with .Params.doi }}
+    <a
+      class="btn btn-outline-primary btn-page-header btn-sm"
+      href="https://doi.org/{{ . }}"
+      target="_blank"
+      rel="noopener"
+    >
+      DOI
+    </a>
+    {{ end }} {{ with .Params.url }}
+    <a
+      class="btn btn-outline-primary btn-page-header btn-sm"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener"
+    >
+      <i class="fas fa-external-link-alt"></i> URL
+    </a>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
