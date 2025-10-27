@@ -1,7 +1,7 @@
 {{ $counter := 0 }} {{ $pubs := where .Site.RegularPages "Section" "publication"
 }} {{ $pubs = $pubs.ByDate.Reverse }} {{ range $pubs }} {{ $counter = add
 $counter 1 }}
-<div class="mb-8 text-amber-100">
+<div class="mb-8">
   <p class="text-base leading-relaxed">
     <strong class="mr-2">{{ $counter }}.</strong>
     {{ range $index, $author := .Params.authors }} {{ if gt $index 0 }}, {{ end
