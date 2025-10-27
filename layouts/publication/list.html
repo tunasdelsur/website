@@ -1,10 +1,13 @@
 {{- define "main" -}}
-<div class="universal-wrapper">
-  <div class="row">
-    <div class="col-lg-12">
-      {{- if .Title -}}
-      <h1>{{ .Title }}</h1>
-      {{- end -}} {{- with .Content -}}
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">Publications</h1>
+  </article>
+</div>
+<div class="flex flex-col items-center">
+  <div class="mt-16 sm:mt-20 w-3xl">
+    <div class="flex flex-col space-y-3">
+      {{- with .Content -}}
       <div class="article-style">{{ . }}</div>
       {{- end -}} {{- partial "section/publication.html" . -}}
     </div>

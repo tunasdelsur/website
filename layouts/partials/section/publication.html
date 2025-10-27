@@ -1,55 +1,86 @@
 {{ $counter := 0 }} {{ $pubs := where .Site.RegularPages "Section" "publication"
 }} {{ $pubs = $pubs.ByDate.Reverse }} {{ range $pubs }} {{ $counter = add
 $counter 1 }}
-<div class="pub-list-item" style="margin-bottom: 2rem">
-  <div class="article-metadata">
-    <strong style="font-size: 1rem; margin-right: 0.5rem"
-      >{{ $counter }}.</strong
-    >
+<div class="mb-8 text-amber-100">
+  <p class="text-base leading-relaxed">
+    <strong class="mr-2">{{ $counter }}.</strong>
     {{ range $index, $author := .Params.authors }} {{ if gt $index 0 }}, {{ end
     }} {{ if eq . "admin" }}
     <strong>Matias Köhler</strong>
     {{ else }} {{ . }} {{ end }} {{ end }} {{ with .Date }} ({{ dateFormat
     "2006" . }}){{ end }}.
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>. {{ with .Params.publication
-    }}<em>{{ . | markdownify }}</em>{{ end }}
-  </div>
-  <div class="btn-links" style="margin-top: 0.5rem">
+    <a
+      href="{{ .RelPermalink }}"
+      class="underline hover:text-primary-600 dark:hover:text-primary-400"
+      >{{ .Title }}</a
+    >. {{ with .Params.publication }}<em>{{ . | markdownify }}</em>.{{ end }}
+  </p>
+  <div class="flex flex-wrap space-x-3">
     {{ with .Params.url_pdf }}
     <a
-      class="btn btn-outline-primary btn-page-header btn-sm"
+      class="hb-attachment-link hb-attachment-small"
       href="{{ . }}"
       target="_blank"
       rel="noopener"
     >
-      <i class="far fa-file-pdf"></i> PDF
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M19.5 14.25v-2.625A3.375 3.375.0 0016.125 8.25h-1.5A1.125 1.125.0 0113.5 7.125v-1.5A3.375 3.375.0 0010.125 2.25H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621.0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621.0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9"
+        ></path>
+      </svg>
+      PDF
     </a>
     {{ end }}
     <a
-      class="btn btn-outline-primary btn-page-header btn-sm"
+      class="hb-attachment-link hb-attachment-small"
       href="{{ .RelPermalink }}"
+      target="_blank"
     >
-      <i class="fas fa-quote-right"></i> CITE
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75A1.125 1.125.0 013.75 20.625V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06.0 011.5.124m7.5 10.376h3.375c.621.0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06.0 00-1.5-.124H9.375c-.621.0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375A1.125 1.125.0 018.25 16.125v-9.25m12 6.625v-1.875A3.375 3.375.0 0016.875 8.25h-1.5A1.125 1.125.0 0114.25 7.125v-1.5A3.375 3.375.0 0010.875 2.25H9.75"
+        ></path>
+      </svg>
+      CITE
     </a>
     {{ with .Params.doi }}
     <a
-      class="btn btn-outline-primary btn-page-header btn-sm"
+      class="hb-attachment-link hb-attachment-small"
       href="https://doi.org/{{ . }}"
       target="_blank"
       rel="noopener"
+      >DOI</a
     >
-      DOI
-    </a>
-    {{ end }} {{ with .Params.url }}
+    {{ end }} {{ range .Params.links }} {{ if eq .name "URL" }}
     <a
-      class="btn btn-outline-primary btn-page-header btn-sm"
-      href="{{ . }}"
+      class="hb-attachment-link hb-attachment-small text-red-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+      href="{{ .url }}"
       target="_blank"
       rel="noopener"
     >
-      <i class="fas fa-external-link-alt"></i> URL
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        ></path>
+      </svg>
+      URL
     </a>
-    {{ end }}
+    {{ end }} {{ end }}
   </div>
 </div>
 {{ end }}
