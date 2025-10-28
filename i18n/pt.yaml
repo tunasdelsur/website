@@ -262,6 +262,11 @@
 - id: cookie_learn
   translation: Saiba mais
 
+# Comments
+
+- id: comments
+  translation: Comentários
+
 # Published with
 
 - id: published_with

@@ -1,0 +1,2 @@
+{{/* Hook to inject comments at the end of blog post content */}} {{- if eq
+.Type "post" -}} {{- partial "comments.html" . -}} {{- end -}}
