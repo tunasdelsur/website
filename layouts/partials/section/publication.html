@@ -15,7 +15,7 @@ $counter 1 }}
       >{{ .Title }}</a
     >. {{ with .Params.publication }}<em>{{ . | markdownify }}</em>.{{ end }}
   </p>
-  <div class="flex flex-wrap space-x-3 dark:text-primary-400 text-primary-600">
+  <div class="flex flex-wrap gap-3 dark:text-primary-400 text-primary-600">
     {{ with .Params.url_pdf }}
     <a
       class="hb-attachment-link hb-attachment-small"
