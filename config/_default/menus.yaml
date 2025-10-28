@@ -33,18 +33,15 @@ main__pt:
   - name: Publicações
     url: /pt/publication/
     weight: 11
-  #- name: Palestras
-  #  url: /pt/#talks
-  #  weight: 12
-  #- name: Notícias
-  #  url: /pt/#news
-  #  weight: 13
-  #- name: Experiência
-  #  url: /pt/experience/
-  #  weight: 20
-  #- name: Projetos
-  #  url: /pt/projects/
-  #  weight: 30
-  #- name: Ensino
-  #  url: /pt/teaching/
-  #  weight: 40
+  - name: Blog
+    url: /pt/post/
+    weight: 12
+  - name: Experiência
+    url: /pt/experience/
+    weight: 20
+  - name: Projetos
+    url: /pt/projects/
+    weight: 30
+  - name: Ensino
+    url: /pt/teaching/
+    weight: 40
