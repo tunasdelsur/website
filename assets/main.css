@@ -1,4 +1,25 @@
+/* Import Google Fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @import "css/main.css";
+
+/* Override Tailwind theme font - Set Inter as default */
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Force Inter font on all elements */
+* {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
+
+body,
+html {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
 
 /* Language Switcher Enhancements */
 /* Fix for Hugo Blox language chooser - add language name via CSS */
