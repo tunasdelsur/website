@@ -29,3 +29,10 @@ pt:
       navbar:
         logo:
           text: "🌳🌴🌿 Botanizando em todo lugar"
+  menu:
+    main:
+      - name: Bio
+        url: /pt/
+        weight: 10
+      - name: Publicações
+        url: /pt/publication/

@@ -3,6 +3,7 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+# English menu
 main:
   - name: Bio
     url: /
@@ -25,23 +26,5 @@ main:
   #- name: Teaching
   #  url: teaching/
   #  weight: 40
-
-main__pt:
-  - name: Bio
-    url: /pt/
-    weight: 10
-  - name: Publicações
-    url: /pt/publicacoes/
-    weight: 11
-  - name: Blog
-    url: /pt/blog/
-    weight: 12
-  - name: Experiência
-    url: /pt/experiencia/
-    weight: 20
-  - name: Projetos
-    url: /pt/projetos/
-    weight: 30
-  - name: Ensino
-    url: /pt/ensino/
-    weight: 40
+# Note: Portuguese menu is now configured in config/_default/languages.yaml
+# under the pt.menu.main section for better organization
