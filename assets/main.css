@@ -1,2 +1,12 @@
-@import "tailwindcss";
-@source "hugo_stats.json";
+@import "css/main.css";
+
+/* Language Switcher Enhancements */
+/* Fix for Hugo Blox language chooser - add language name via CSS */
+[data-hb-language-chooser] span:empty::after {
+  content: attr(data-lang-name);
+}
+
+/* Make the language dropdown items visible */
+[data-hb-language-chooser] + ul a:empty::before {
+  content: "Português";
+}

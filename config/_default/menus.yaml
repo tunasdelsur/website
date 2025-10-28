@@ -25,3 +25,26 @@ main:
   #- name: Teaching
   #  url: teaching/
   #  weight: 40
+
+main__pt:
+  - name: Bio
+    url: /pt/
+    weight: 10
+  - name: Publicações
+    url: /pt/publication/
+    weight: 11
+  #- name: Palestras
+  #  url: /pt/#talks
+  #  weight: 12
+  #- name: Notícias
+  #  url: /pt/#news
+  #  weight: 13
+  #- name: Experiência
+  #  url: /pt/experience/
+  #  weight: 20
+  #- name: Projetos
+  #  url: /pt/projects/
+  #  weight: 30
+  #- name: Ensino
+  #  url: /pt/teaching/
+  #  weight: 40

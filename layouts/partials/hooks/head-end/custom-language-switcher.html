@@ -1,0 +1,32 @@
+<script>
+  // Fix Hugo Blox language chooser - add missing language names
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentLang = document.documentElement.lang;
+
+    // Fix navbar language chooser
+    const langButton = document.querySelector("[data-hb-language-chooser]");
+    if (langButton) {
+      const currentLangSpan = langButton.querySelector("span");
+      if (currentLangSpan && !currentLangSpan.textContent.trim()) {
+        currentLangSpan.textContent =
+          currentLang === "pt" ? "Português" : "English";
+      }
+
+      // Fix dropdown items
+      const langList = langButton.nextElementSibling;
+      if (langList && langList.tagName === "UL") {
+        const links = langList.querySelectorAll("a");
+        links.forEach((link) => {
+          if (!link.textContent.trim()) {
+            const href = link.getAttribute("href");
+            if (href && href.includes("/pt/")) {
+              link.textContent = "Português";
+            } else {
+              link.textContent = "English";
+            }
+          }
+        });
+      }
+    }
+  });
+</script>
