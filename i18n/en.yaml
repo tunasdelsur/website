@@ -267,6 +267,11 @@
 - id: comments
   translation: Comments
 
+# Read More
+
+- id: read_more
+  translation: Read more
+
 # Published with
 
 - id: published_with

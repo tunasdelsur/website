@@ -31,3 +31,12 @@ html {
 [data-hb-language-chooser] + ul a:empty::before {
   content: "Português";
 }
+
+/* Post Cards - Enhanced Emerald Glow */
+/* Additional styling for cards beyond what's in the template */
+
+/* Enhanced drop shadow with emerald glow on hover */
+.blox-collection [role="article"].shadow-lg:hover {
+  box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.15),
+    0 10px 10px -5px rgba(16, 185, 129, 0.1);
+}
