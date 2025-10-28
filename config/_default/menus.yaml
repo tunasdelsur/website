@@ -31,17 +31,17 @@ main__pt:
     url: /pt/
     weight: 10
   - name: Publicações
-    url: /pt/publication/
+    url: /pt/publicacoes/
     weight: 11
   - name: Blog
-    url: /pt/post/
+    url: /pt/blog/
     weight: 12
   - name: Experiência
-    url: /pt/experience/
+    url: /pt/experiencia/
     weight: 20
   - name: Projetos
-    url: /pt/projects/
+    url: /pt/projetos/
     weight: 30
   - name: Ensino
-    url: /pt/teaching/
+    url: /pt/ensino/
     weight: 40

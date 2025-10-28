@@ -16,10 +16,10 @@
   translation: Home
 
 - id: close
-  translation: Close
+  translation: Fechar
 
 - id: languages
-  translation: Languages
+  translation: Idiomas
 
 # General
 
@@ -39,21 +39,21 @@
   translation: "Figura %d:"
 
 - id: edit_page
-  translation: Edit this page
+  translation: Editar esta página
 
 # Themes
 
 - id: theme_selector
-  translation: Display preferences
+  translation: Preferências de exibição
 
 - id: theme_light
-  translation: Light
+  translation: Claro
 
 - id: theme_dark
-  translation: Dark
+  translation: Escuro
 
 - id: theme_auto
-  translation: Automatic
+  translation: Automático
 
 # Buttons
 
@@ -67,7 +67,7 @@
   translation: Citação
 
 - id: btn_slides
-  translation: Slides
+  translation: Apresentações
 
 - id: btn_video
   translation: Vídeo
@@ -91,12 +91,15 @@
   translation: Copiar
 
 - id: btn_copied
-  translation: Copied
+  translation: Copiado
 
 - id: btn_download
-  translation: Download
+  translation: Baixar
 
 # About widget
+
+- id: about_me
+  translation: Resumo Profissional
 
 - id: interests
   translation: Interesses
@@ -143,7 +146,7 @@
   translation: Mensagem
 
 - id: contact_attachment
-  translation: Attach file
+  translation: Anexar arquivo
 
 - id: contact_send
   translation: Enviar
@@ -221,7 +224,7 @@
   translation: Slides
 
 - id: authors
-  translation: Authors
+  translation: Autores
 
 # Search
 
@@ -238,7 +241,7 @@
   translation: Sem resultados
 
 - id: search_common_queries
-  translation: Common searches
+  translation: Pesquisas comuns
 
 # Error 404
 
@@ -262,4 +265,4 @@
 # Published with
 
 - id: published_with
-  translation: Made with {hugoblox}.
+  translation: Feito com {hugoblox}.
