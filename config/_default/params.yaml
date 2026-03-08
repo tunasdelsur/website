@@ -7,24 +7,26 @@
 appearance:
   mode: system
   color: emerald
+  font: ""
+  font_size: L
 
 # SEO
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'Personal website of botanist Prof. Matias Köhler'
-    twitter: 'GetResearchDev'
+    local_business_type: ""
+    org_name: ""
+    description: "Personal website of botanist Prof. Matias Köhler"
+    twitter: "GetResearchDev"
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
+    google_analytics: ""
+    baidu_tongji: ""
+    plausible: ""
+    fathom: ""
+    pirsch: ""
   verification:
-    google: ''
-    baidu: ''
+    google: ""
+    baidu: ""
 
 # Site header
 header:
@@ -34,13 +36,14 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
+    show_language_chooser: true
     logo:
       text: "🌳🌴🌿 Botanizing everywhere"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: "© {year} Me. This work is licensed under {license}"
     license:
       enable: true
       allow_derivatives: false
@@ -49,8 +52,8 @@ footer:
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
 
 # Site features
 features:
@@ -58,3 +61,13 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# Comments
+comments:
+  provider: utterances
+  utterances:
+    repo: "tunasdelsur/website" # TODO: Add your GitHub repository (e.g., "username/repo")
+    issue_term: pathname
+    theme: preferred-color-scheme # Automatically matches site theme
+    label: "💬 comments"
+    crossorigin: anonymous

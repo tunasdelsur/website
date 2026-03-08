@@ -1,8 +1,86 @@
-{{ $counter := 0 }}
-{{ range sort .Pages.ByDate "Date" }}
-  {{ $counter = add $counter 1 }}
-  <div class="pub-item">
-    <strong>{{ $counter }}.</strong>
-    {{ partial "publication_li.html" . }}
+{{ $counter := 0 }} {{ $pubs := where .Site.RegularPages "Section" "publication"
+}} {{ $pubs = $pubs.ByDate }} {{ range $pubs }} {{ $counter = add
+$counter 1 }}
+<div class="mb-8">
+  <p class="text-base leading-relaxed">
+    <strong class="mr-2">{{ $counter }}.</strong>
+    {{ range $index, $author := .Params.authors }} {{ if gt $index 0 }}, {{ end
+    }} {{ if eq . "admin" }}
+    <strong>Matias Köhler</strong>
+    {{ else }} {{ . }} {{ end }} {{ end }} {{ with .Date }} ({{ dateFormat
+    "2006" . }}){{ end }}.
+    <a
+      href="{{ .RelPermalink }}"
+      class="underline hover:text-primary-600 dark:hover:text-primary-400"
+      >{{ .Title }}</a
+    >. {{ with .Params.publication }}<em>{{ . | markdownify }}</em>.{{ end }}
+  </p>
+  <div class="flex flex-wrap gap-3 dark:text-primary-400 text-primary-600">
+    {{ with .Params.url_pdf }}
+    <a
+      class="hb-attachment-link hb-attachment-small"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener"
+    >
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M19.5 14.25v-2.625A3.375 3.375.0 0016.125 8.25h-1.5A1.125 1.125.0 0113.5 7.125v-1.5A3.375 3.375.0 0010.125 2.25H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621.0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621.0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9"
+        ></path>
+      </svg>
+      PDF
+    </a>
+    {{ end }}
+    <a
+      class="hb-attachment-link hb-attachment-small"
+      href="{{ .RelPermalink }}"
+      target="_blank"
+    >
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75A1.125 1.125.0 013.75 20.625V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06.0 011.5.124m7.5 10.376h3.375c.621.0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06.0 00-1.5-.124H9.375c-.621.0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375A1.125 1.125.0 018.25 16.125v-9.25m12 6.625v-1.875A3.375 3.375.0 0016.875 8.25h-1.5A1.125 1.125.0 0114.25 7.125v-1.5A3.375 3.375.0 0010.875 2.25H9.75"
+        ></path>
+      </svg>
+      CITE
+    </a>
+    {{ with .Params.doi }}
+    <a
+      class="hb-attachment-link hb-attachment-small"
+      href="https://doi.org/{{ . }}"
+      target="_blank"
+      rel="noopener"
+      >DOI</a
+    >
+    {{ end }} {{ range .Params.links }} {{ if eq .name "URL" }}
+    <a
+      class="hb-attachment-link hb-attachment-small text-red-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+      href="{{ .url }}"
+      target="_blank"
+      rel="noopener"
+    >
+      <svg style="height: 1em" class="inline-block" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M13.19 8.688a4.5 4.5.0 011.242 7.244l-4.5 4.5a4.5 4.5.0 01-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5.0 00-6.364-6.364l-4.5 4.5a4.5 4.5.0 001.242 7.244"
+        ></path>
+      </svg>
+      URL
+    </a>
+    {{ end }} {{ end }}
   </div>
+</div>
 {{ end }}

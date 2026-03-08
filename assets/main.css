@@ -1,0 +1,42 @@
+/* Import Google Fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import "css/main.css";
+
+/* Override Tailwind theme font - Set Inter as default */
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Force Inter font on all elements */
+* {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
+
+body,
+html {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Language Switcher Enhancements */
+/* Fix for Hugo Blox language chooser - add language name via CSS */
+[data-hb-language-chooser] span:empty::after {
+  content: attr(data-lang-name);
+}
+
+/* Make the language dropdown items visible */
+[data-hb-language-chooser] + ul a:empty::before {
+  content: "Português";
+}
+
+/* Post Cards - Enhanced Emerald Glow */
+/* Additional styling for cards beyond what's in the template */
+
+/* Enhanced drop shadow with emerald glow on hover */
+.blox-collection [role="article"].shadow-lg:hover {
+  box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.15),
+    0 10px 10px -5px rgba(16, 185, 129, 0.1);
+}

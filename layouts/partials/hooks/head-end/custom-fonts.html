@@ -1,0 +1,39 @@
+<!-- Load Inter font from Google Fonts and apply it globally -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  /* Override Tailwind CSS font variables to use Inter */
+  :root {
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji" !important;
+    --default-font-family: "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif !important;
+  }
+
+  /* Force Inter on all text elements */
+  body,
+  html,
+  * {
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif !important;
+  }
+
+  /* Ensure monospace elements keep their monospace font */
+  code,
+  kbd,
+  samp,
+  pre,
+  tt,
+  var {
+    font-family: var(--font-mono) !important;
+  }
+</style>
