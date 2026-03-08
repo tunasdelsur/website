@@ -34,6 +34,12 @@ Site pessoal de Matias Köhler, construído com [Hugo](https://gohugo.io/) e o t
 
 ---
 
+## Manual do Site
+
+Para instruções detalhadas sobre como editar conteúdo, traduções, publicações e posts, consulte o **[Manual do Site](docs/MANUAL_DO_SITE.md)**.
+
+---
+
 ## Pré-requisitos
 
 - [Hugo Extended](https://gohugo.io/installation/) `v0.136.5` ou superior
