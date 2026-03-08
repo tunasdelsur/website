@@ -66,7 +66,7 @@ features:
 comments:
   provider: utterances
   utterances:
-    repo: "fredericokingston/coolify-astro" # TODO: Add your GitHub repository (e.g., "username/repo")
+    repo: "tunasdelsur/website" # TODO: Add your GitHub repository (e.g., "username/repo")
     issue_term: pathname
     theme: preferred-color-scheme # Automatically matches site theme
     label: "💬 comments"

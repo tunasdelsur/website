@@ -37,6 +37,6 @@ pt:
       - name: Publicações
         url: /pt/publication/
         weight: 11
-      - name: Blog
-        url: /pt/post/
-        weight: 12
+      #- name: Blog
+      #  url: /pt/post/
+      #  weight: 12
