@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Assistant Professor | Professor Assistente
+role: Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -41,7 +41,7 @@ profiles:
     label: Find me at X (rarely used)
   - icon: brands/instagram
     url: https://www.instagram.com/tunasdelsur/
-    label: Check my Instagram
+    label: Check my Instagram (rarely used)
   - icon: brands/github
     url: https://github.com/tunasdelsur/
     label: My GitHub portal
