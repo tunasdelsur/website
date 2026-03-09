@@ -1,5 +1,7 @@
 ---
 title: "Um exemplo de artigo de periódico"
+draft: true
+
 authors:
 - admin
 - Robert Ford
