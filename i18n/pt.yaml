@@ -99,7 +99,7 @@
 # About widget
 
 - id: about_me
-  translation: Resumo Profissional
+  translation: Olá, bem-vindo(a) ao meu site Acadêmico!
 
 - id: interests
   translation: Interesses
