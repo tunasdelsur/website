@@ -99,7 +99,7 @@
 # About widget
 
 - id: about_me
-  translation: ""
+  translation: "Hello, welcome to my Academic webpage!"
 
 - id: interests
   translation: Interests
