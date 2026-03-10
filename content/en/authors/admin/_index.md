@@ -184,5 +184,5 @@ languages:
 #      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## Hello & Welcome to My Page!!
+##
 I am an evolutionary biologist best defined as a Botanist. I am currently an Assistant Professor at the Universidade Federal da Fronteira Sul (RS, Brazil). My research focuses on the evolutionary relationships of plants using molecular phylogenetic methods, as well as morphology, cytology, and ecological data to address questions related to biogeographic history, community assembly, diversification, morphological and genome evolution, species origin, and species boundaries within groups. You will find more information browsing this page (under construction), and if you have any questions, don’t hesitate to contact me!
