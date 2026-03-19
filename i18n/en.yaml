@@ -276,3 +276,40 @@
 
 - id: published_with
   translation: Made with {hugoblox}.
+
+# Months
+- id: month_1
+  translation: January
+
+- id: month_2
+  translation: February
+
+- id: month_3
+  translation: March
+
+- id: month_4
+  translation: April
+
+- id: month_5
+  translation: May
+
+- id: month_6
+  translation: June
+
+- id: month_7
+  translation: July
+
+- id: month_8
+  translation: August
+
+- id: month_9
+  translation: September
+
+- id: month_10
+  translation: October
+
+- id: month_11
+  translation: November
+
+- id: month_12
+  translation: December

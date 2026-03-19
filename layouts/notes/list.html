@@ -18,7 +18,11 @@
         <div>
 
           <div class="text-sm text-gray-500">
-            {{ .Date.Format "2 January 2006" }}
+            {{ if eq .Site.Language.Lang "pt" }}
+  {{ .Date.Day }} de {{ i18n (printf "month_%d" .Date.Month) }} de {{ .Date.Year }}
+{{ else }}
+  {{ .Date.Day }} {{ i18n (printf "month_%d" .Date.Month) }} {{ .Date.Year }}
+{{ end }}
           </div>
 
           <div class="article-style">
