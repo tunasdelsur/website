@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+<p>Short notes, ideas, and updates.</p>
+
+<hr>
+
+{{ range .Pages.ByDate.Reverse }}
+  <div style="margin-bottom: 2rem;">
+
+    <small style="color: gray;">
+      {{ .Date.Format "2006-01-02" }}
+    </small>
+
+    <h3>{{ .Title }}</h3>
+
+    <div>
+      {{ .Content }}
+    </div>
+
+  </div>
+{{ end }}
+
+{{ end }}

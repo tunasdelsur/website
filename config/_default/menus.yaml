@@ -11,6 +11,9 @@ main:
   - name: Publications
     url: /publication/
     weight: 11
+  - name: Notes
+    url: /notes/
+    weight:12
   #- name: Blog
   #  url: /post/
   #  weight: 12
