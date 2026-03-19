@@ -1,18 +1,20 @@
-{{ $counter := 0 }} {{ $pubs := where .Site.RegularPages "Section" "publication"
-}} {{ $pubs = $pubs.ByDate }} {{ range $pubs }} {{ $counter = add
-$counter 1 }}
+{{ $pubs := where .Site.RegularPages "Section" "publication" }}
+{{ $pubs = $pubs.ByDate.Reverse }}
+{{ $total := len $pubs }}
+{{ range $i, $pub := $pubs }}
+{{ $counter := sub $total $i }}
 <div class="mb-8">
   <p class="text-base leading-relaxed">
     <strong class="mr-2">{{ $counter }}.</strong>
-    {{ range $index, $author := .Params.authors }} {{ if gt $index 0 }}, {{ end
+    {{ range $index, $author := $pub.Params.authors }} {{ if gt $index 0 }}, {{ end
     }} {{ if eq . "admin" }}
     <strong>Matias Köhler</strong>
-    {{ else }} {{ . }} {{ end }} {{ end }} {{ with .Date }} ({{ dateFormat
+    {{ else }} {{ . }} {{ end }} {{ end }} {{ with $pub.Date }} ({{ dateFormat
     "2006" . }}){{ end }}.
     <a
       href="{{ .RelPermalink }}"
       class="underline hover:text-primary-600 dark:hover:text-primary-400"
-      >{{ .Title }}</a
+      >{{ $pub.Title }}</a
     >. {{ with .Params.publication }}<em>{{ . | markdownify }}</em>.{{ end }}
   </p>
   <div class="flex flex-wrap gap-3 dark:text-primary-400 text-primary-600">
