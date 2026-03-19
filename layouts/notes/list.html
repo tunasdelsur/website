@@ -4,18 +4,20 @@
 
   <h1>{{ .Title }}</h1>
 
+  <hr>
+
   {{ range .Pages.ByDate.Reverse }}
-    <div style="margin-bottom: 2rem;">
+    <article style="margin-bottom: 2rem;">
 
-      <small class="text-muted">
-        {{ .Date.Format "2006-01-02" }}
-      </small>
+      <div style="font-size: 0.9em; color: gray;">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </div>
 
-      <div>
+      <div style="margin-top: 0.5rem;">
         {{ .Content }}
       </div>
 
-    </div>
+    </article>
   {{ end }}
 
 </div>
