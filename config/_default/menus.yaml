@@ -5,7 +5,7 @@
 
 # English menu
 main:
-  - name: Bio
+  - name: About
     url: /
     weight: 10
   - name: Publications

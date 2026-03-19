@@ -31,12 +31,12 @@ pt:
           text: "🌳🌴🌿 Botanizando em todo lugar"
   menu:
     main:
-      - name: Bio
+      - name: Sobre
         url: /pt/
         weight: 10
       - name: Publicações
         url: /pt/publication/
         weight: 11
-      #- name: Blog
-      #  url: /pt/post/
-      #  weight: 12
+      - name: Notas
+        url: /pt/notes/
+        weight: 12
