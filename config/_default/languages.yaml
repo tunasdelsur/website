@@ -35,8 +35,8 @@ pt:
         url: /pt/
         weight: 10
       - name: Publicações
-        url: /pt/publication/
+        url: /publication/
         weight: 11
       - name: Notas
-        url: /pt/notes/
+        url: /notes/
         weight: 12
