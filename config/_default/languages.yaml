@@ -32,11 +32,11 @@ pt:
   menu:
     main:
       - name: Sobre
-        url: /
+        url: /website/pt/
         weight: 10
       - name: Publicações
-        url: /publication/
+        url: /website/pt/publication/
         weight: 11
       - name: Notas
-        url: /notes/
+        url: /website/pt/notes/
         weight: 12
