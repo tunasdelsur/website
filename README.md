@@ -1,6 +1,6 @@
 # MK - Website
 
-My personal website built with [Hugo](https://gohugo.io/) and [Hugo Academic CV (Hugo Blox)](https://hugoblox.com/templates/) theme. 
+My personal website built with [Hugo](https://gohugo.io/) and [Hugo Academic CV (Hugo Blox)](https://hugoblox.com/templates/) theme.  
 It has a Portuguese and an English version, and it is hosted in GitHub Pages.
 
 ---
