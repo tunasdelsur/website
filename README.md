@@ -1,6 +1,6 @@
-# Matias Köhler — Site Pessoal
+# MK - Website
 
-Site pessoal de Matias Köhler, construído com [Hugo](https://gohugo.io/) e o tema [Hugo Academic CV (Hugo Blox)](https://hugoblox.com/templates/). Suporta dois idiomas (inglês e português) e é hospedado via Github Pages.
+My personal website built with [Hugo](https://gohugo.io/) and [Hugo Academic CV (Hugo Blox)](https://hugoblox.com/templates/) theme. It has Portuguese and English versionn, hosted in GitHub Pages.
 
 ---
 
