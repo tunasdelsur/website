@@ -6,7 +6,7 @@
 # Website name
 title: Matias Köhler | Botanizing everywhere
 # Website URL
-baseURL: "https://tunasdelsur.github.io/website/"
+baseURL: ""
 
 ############################
 ## LANGUAGE
@@ -14,7 +14,7 @@ baseURL: "https://tunasdelsur.github.io/website/"
 
 defaultContentLanguage: en
 hasCJKLanguage: false
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 removePathAccents: true
 
 ############################
