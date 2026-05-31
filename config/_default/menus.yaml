@@ -6,13 +6,13 @@
 # English menu
 main:
   - name: About
-    url: /
+    pageRef: /
     weight: 10
   - name: Publications
-    url: /publication/
+    pageRef: /publication
     weight: 11
   - name: Notes
-    url: /notes/
+    pageRef: /notes
     weight: 12
   #- name: Blog
   #  url: /post/
