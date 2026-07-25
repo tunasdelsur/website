@@ -14,7 +14,7 @@ main:
   - name: Research
     pageRef: /research
     weight: 11
-  - name: Publication
+  - name: Publications
     pageRef: /publication/
     weight: 12
   - name: Notes

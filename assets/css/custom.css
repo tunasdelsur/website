@@ -186,6 +186,40 @@ body:has(.home-cover) #site-header .nav-link:hover {
   }
 }
 
+/* ==================================================
+   HOMEPAGE E MENU — AJUSTES PARA CELULAR
+   ================================================== */
+
+@media (max-width: 767px) {
+  .home-cover {
+    min-height: 100svh;
+  }
+
+  /* Centraliza o recorte na Opuntia com fruto. */
+  .home-cover .home-section-bg {
+    background-position: 35% center;
+  }
+
+  /* Remove o slogan do cabeçalho mobile. */
+  #site-header .navbar-brand {
+    display: none;
+  }
+
+  /* Aplica ao menu mobile a tipografia do desktop. */
+  #site-header .nav-link {
+    font-family: "Maven Pro", sans-serif !important;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+  }
+
+  #site-header .nav-link:hover {
+    opacity: 0.6;
+  }
+}
+
 /* Aumenta somente a linha do seletor de idioma */
 .page-footer .language-selector {
   padding-top: 1rem;
@@ -1295,8 +1329,20 @@ body:has(.research-page) .research-hero {
 @media (max-width: 760px) {
   .research-hero .research-switcher {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 9px;
-  }
+    overflow-x: visible;
+}
+
+.research-hero .research-switcher__button {
+  width: 290px;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  text-align: center;
+}
 
   .research-panel {
     grid-template-columns: 1fr;
@@ -1319,6 +1365,164 @@ body:has(.research-page) .research-hero {
   }
 }
 
+/* =========================================================
+   CABEÇALHO E MENU EXPANSÍVEL — MOBILE
+   ========================================================= */
+
+@media (max-width: 1023px) {
+
+  /*
+   Mantém o cabeçalho acima do conteúdo.
+   Importante especialmente na página Research,
+   que utiliza isolation: isolate.
+  */
+  body:not(:has(.home-cover)) .page-header {
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+  }
+
+  #site-header {
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+  }
+
+  /* Centraliza os controles do cabeçalho. */
+  #site-header .navbar {
+    position: relative;
+    justify-content: center !important;
+    overflow: visible;
+  }
+
+  /* Remove o espaçamento que empurra os controles à direita. */
+  #site-header .navbar > .order-1 {
+    margin-left: 0 !important;
+  }
+
+/* Menu mobile como painel flutuante */
+  #site-header #nav-menu {
+    position: absolute !important;
+
+    top: calc(100% + 8px);
+    left: 50%;
+    right: auto;
+
+    width: min(320px, calc(100vw - 24px)) !important;
+    box-sizing: border-box;
+
+    margin: 0 !important;
+    padding: 0.65rem !important;
+
+    transform: translateX(-50%);
+    z-index: 200;
+
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  /* Aparência nas páginas internas */
+  body:not(:has(.home-cover)) #site-header #nav-menu {
+    border: 1px solid rgba(24, 32, 28, 0.12);
+
+    background: rgba(255, 255, 255, 0.4);
+
+    box-shadow:
+      0 14px 35px rgba(24, 32, 28, 0.14),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+
+  /* Links dentro do painel */
+  #site-header #nav-menu .nav-link {
+    display: block;
+    width: 100%;
+
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+
+    text-align: center;
+    line-height: 1.2;
+
+    transition:
+      background-color 180ms ease,
+      opacity 180ms ease;
+  }
+
+body:not(:has(.home-cover))
+  #site-header
+  #nav-menu
+  .nav-link:hover {
+  background-color: rgba(83, 101, 84, 0.09);
+  opacity: 1;
+}
+
+body:not(:has(.home-cover))
+  #site-header
+  #nav-menu
+  .nav-link.active,
+body:not(:has(.home-cover))
+  #site-header
+  #nav-menu
+  .nav-link[aria-current="page"] {
+  background-color: rgba(83, 101, 84, 0.13);
+}
+
+  /* Modo escuro */
+  html.dark body:not(:has(.home-cover)) #site-header #nav-menu {
+    border-color: rgba(255, 255, 255, 0.12);
+
+    background: rgba(20, 25, 22, 0.5);
+
+    box-shadow:
+      0 16px 38px rgba(0, 0, 0, 0.38),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  html.dark #site-header #nav-menu .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  html.dark #site-header #nav-menu .nav-link.active,
+  html.dark #site-header #nav-menu .nav-link[aria-current="page"] {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+}
+}
+
+/* =========================================================
+   HOME — MENU MOBILE SEM FUNDO
+   ========================================================= */
+
+@media (max-width: 1023px) {
+
+  body:has(.home-cover) #site-header #nav-menu {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  /* Remove fundos dos links na home */
+  body:has(.home-cover) #site-header #nav-menu .nav-link,
+  body:has(.home-cover) #site-header #nav-menu .nav-link:hover,
+  body:has(.home-cover) #site-header #nav-menu .nav-link.active,
+  body:has(.home-cover)
+    #site-header
+    #nav-menu
+    .nav-link[aria-current="page"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
 
 /* =========================================================
    UNIFORMIZAÇÃO DOS CARTÕES DE PUBLICAÇÕES
