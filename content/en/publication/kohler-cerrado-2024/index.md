@@ -41,7 +41,9 @@ tags:
 - Plant Biogeography
 - Plant Evolution
 - Plant Diversification
-
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.14846

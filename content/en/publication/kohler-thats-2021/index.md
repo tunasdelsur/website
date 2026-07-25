@@ -23,6 +23,9 @@ abstract: The genus Opuntia is one of the most emblematic of the cactus family (
   As a consequence, a new combination is proposed, and an epitype from the herbarium
   BAF is designated. An updated description of the taxon with illustrations is also
   given.
+research_areas:
+- floristics
+- systematics
 tags:
 - Eudicots
 links:

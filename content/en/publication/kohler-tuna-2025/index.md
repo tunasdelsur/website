@@ -23,6 +23,9 @@ tags:
 - Botanical Code
 - Nomenclature Proposal
 - Cactaceae
+research_areas:
+- floristics
+- systematics
 
 url_pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/tax.13365
 image:

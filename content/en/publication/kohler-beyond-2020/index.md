@@ -45,7 +45,9 @@ tags:
 - Plant Evolution
 - Plant Biogeography
 - Plant Systematics
-
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://www.sciencedirect.com/science/article/pii/S1433831920300342

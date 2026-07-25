@@ -25,6 +25,8 @@ abstract: 'ABSTRACT. In this paper, we present and discuss experiences of the ex
   strengthening of the group’s identity of resistance against the current globalized
   agriculture. Likewise, the progress was made in the construction of autonomy in
   the face of techniques and knowledge applied to agroecological production.'
+research_areas:
+- plant-foods
 links:
 - name: URL
   url: https://periodicos.ufnt.edu.br/index.php/campo/article/view/4788

@@ -37,6 +37,9 @@ tags:
 - plantas alimentícias
 - Economic Botany
 - People and Plants
+research_areas:
+- floristics
+- plant-foods
 links:
 - name: URL
   url: https://www.scielo.br/j/rod/a/JpWKrZKkFy8hGXYdNLqDwzr/

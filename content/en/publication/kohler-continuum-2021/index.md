@@ -34,6 +34,9 @@ tags:
 - cytogenetics
 - Opuntia
 - polyploidy
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://doi.org/10.1080/14772000.2021.1967510

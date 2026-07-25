@@ -5,15 +5,21 @@
 
 # English menu
 main:
+  - name: Home
+    pageRef: /
+    weight: 5
   - name: About
-    url: /
+    pageRef: /about
     weight: 10
-  - name: Publications
-    url: /publication/
+  - name: Research
+    pageRef: /research
     weight: 11
-  - name: Notes
-    url: /notes/
+  - name: Publication
+    pageRef: /publication/
     weight: 12
+  - name: Notes
+    pageRef: /notes/
+    weight: 13
   #- name: Blog
   #  url: /post/
   #  weight: 12

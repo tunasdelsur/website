@@ -41,6 +41,9 @@ tags:
 - Plant Systematics
 - Plant Evolution
 - Plant Diversification
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://onlinelibrary.wiley.com/doi/abs/10.1002/tax.13206

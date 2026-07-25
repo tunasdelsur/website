@@ -12,6 +12,9 @@ doi: 10.11646/phytotaxa.641.3.7
 abstract: N/A
 tags:
 - Eudicots
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://phytotaxa.mapress.com/pt/article/view/phytotaxa.641.3.7

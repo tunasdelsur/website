@@ -16,7 +16,8 @@ tags:
 - Plant Systematics
 
 abstract: '*Pilosocereus cristalinensis* was initially briefly described and later expanded and illustrated by Braun & Esteves (1987). Since then, it has been compared to *P. machrisii*, from which it differs by a combination of morphological traits and geographic distribution. However, Zappi (1994), in her taxonomic revision of *Pilosocereus* in Brazil, synonymized *P. cristalinensis* with *P. machrisii*, a treatment that has been followed until now. Recent molecular studies, however, demonstrate that *P. machrisii* and *P. cristalinensis* are not closely related phylogenetically. Based on these results, as well as fieldwork and morphological analyses, we propose the recognition of *P. cristalinensis* as a species distinct from *P. machrisii*.'
-
+research_areas:
+- floristics
 links:
 - name: URL
   url: https://phytotaxa.mapress.com/pt/article/view/phytotaxa.696.3.6

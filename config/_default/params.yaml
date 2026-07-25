@@ -38,7 +38,7 @@ header:
     show_theme_chooser: true
     show_language_chooser: true
     logo:
-      text: "🌳🌴🌿 Botanizing everywhere"
+      text: "Botanizing everywhere"
 
 # Site footer
 footer:

@@ -31,8 +31,10 @@ abstract: The formation of the western North American drylands has led to the ev
   range into colder environments. The Xerocarpa clade shows a cold desert origin,
   and changes in morphological characters have made these sister taxa well adapted
   for invading broadscale, but oftentimes contrasting habitats.
+research_areas:
+- systematics
 tags:
-- textitOpuntia
+- Opuntia
 - Colorado Plateau
 - Mojave Desert
 - prickly pears

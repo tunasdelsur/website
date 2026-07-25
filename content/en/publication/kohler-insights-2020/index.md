@@ -42,6 +42,8 @@ abstract: 'Chloroplast genomes are frequently treated as highly conserved among 
   ecological drivers, physiological constraints and morphological traits of cacti
   may be related with the common rearrangements in plastomes that have been reported
   across the family.'
+research_areas:
+- systematics
 tags:
 - Cacti
 - de novo assembly

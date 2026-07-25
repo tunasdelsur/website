@@ -22,6 +22,8 @@ abstract: The genus Opuntia Miller (1754) (Cactaceae Juss., Opuntioideae K.Schum
   Anderson 2001, Stuppy 2002, Hunt 2006, Majure &amp; Puente 2014, Majure et al. 2017).
 tags:
 - Southern Brazil
+research_areas:
+- floristics
 links:
 - name: URL
   url: https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.379.4.3

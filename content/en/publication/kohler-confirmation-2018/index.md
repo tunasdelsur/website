@@ -20,6 +20,8 @@ abstract: Aloysia dusenii Moldenke (Verbenaceae) is a rheophyte species endemic 
   in field were provide for the literature. The importance of including this taxon
   in the regional lists of endangered flora is emphasized in view of the great threat
   to their environment coming from dams to hydroelectric projects.
+research_areas:
+- floristics
 links:
 - name: URL
   url: 

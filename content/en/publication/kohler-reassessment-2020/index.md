@@ -31,6 +31,8 @@ abstract: Background and aims – Opuntia is the most widespread genus of Cactac
   which, heretofore, were only represented by a photo. The species is considered endemic
   to Uruguay and is provisionally assessed as Endangered (EN) using IUCN criteria,
   but more fieldwork will be necessary to provide a further precise conservation status.
+research_areas:
+- floristics
 links:
 - name: URL
   url: https://plecevo.eu/article/24625/

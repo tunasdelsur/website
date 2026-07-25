@@ -27,6 +27,9 @@ abstract: Opuntia, the most widespread genus of cacti, occurs throughout the Ame
   the distribution of the genus, is recommended.
 tags:
 - Eudicots
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.428.3.9

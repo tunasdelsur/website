@@ -11,7 +11,6 @@ authors:
 - Pablo C. Guerrero
 - Héctor M. Hernández
 - Andreas Kohlbecker
-- admin
 - Katja Luther
 - Lucas C. Majure
 - Andreas Müller
@@ -48,6 +47,9 @@ abstract: 'This data paper presents a largely phylogeny-based online taxonomic b
   backbone for the family. – Willdenowia 51: 251–270. Version of record first published
   online on 31 August 2021 ahead of inclusion in August 2021 issue. Data published
   through: http://caryophyllales.org/cactaceae/Checklist'
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: 

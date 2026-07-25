@@ -14,7 +14,7 @@ en:
     header:
       navbar:
         logo:
-          text: "🌳🌴🌿 Botanizing everywhere"
+          text: "Botanizing everywhere"
 
 # Portuguese (Brazil)
 pt:
@@ -28,15 +28,21 @@ pt:
     header:
       navbar:
         logo:
-          text: "🌳🌴🌿 Botanizando em todo lugar"
+          text: "Botanizando em todo lugar"
   menu:
     main:
+      - name: Início
+        pageRef: /
+        weight: 5
       - name: Sobre
-        url: /pt/
+        pageRef: /sobre
         weight: 10
-      - name: Publicações
-        url: /pt/publication/
+      - name: Pesquisa
+        pageRef: /pesquisa
         weight: 11
-      - name: Notas
-        url: /pt/notes/
+      - name: Publicações
+        pageRef: /publication/
         weight: 12
+      - name: Notas
+        pageRef: /notes/
+        weight: 13

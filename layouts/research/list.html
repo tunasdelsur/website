@@ -1,0 +1,346 @@
+{{ define "main" }}
+
+{{ $areas := .Params.research_areas }}
+
+<main class="research-page" data-research-page>
+
+  <section class="research-hero">
+
+    <div class="research-hero__backgrounds">
+      {{ range $index, $area := $areas }}
+        <figure
+          class="research-hero__background"
+          data-research-background="{{ $area.id }}"
+          {{ if ne $index 0 }}hidden{{ end }}
+        >
+          <img
+            src="{{ $area.background_image | relURL }}"
+            alt="{{ $area.background_alt }}"
+          >
+        </figure>
+      {{ end }}
+    </div>
+
+    <div class="research-hero__overlay" aria-hidden="true"></div>
+
+    <div class="research-hero__inner">
+
+      <nav
+        class="research-switcher"
+        aria-label="{{ if eq .Language.Lang "pt" }}Selecionar linha de pesquisa{{ else }}Select research area{{ end }}"
+        role="tablist"
+      >
+        {{ range $index, $area := $areas }}
+          <button
+            id="research-tab-{{ $area.id }}"
+            class="research-switcher__button{{ if eq $index 0 }} is-active{{ end }}"
+            type="button"
+            role="tab"
+            data-research-trigger="{{ $area.id }}"
+            aria-controls="research-panel-{{ $area.id }}"
+            aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+            tabindex="{{ if eq $index 0 }}0{{ else }}-1{{ end }}"
+          >
+            {{ $area.menu_title }}
+          </button>
+        {{ end }}
+      </nav>
+
+      <div class="research-panels">
+        {{ range $index, $area := $areas }}
+          <article
+            id="research-panel-{{ $area.id }}"
+            class="research-panel"
+            data-research-panel="{{ $area.id }}"
+            role="tabpanel"
+            aria-labelledby="research-tab-{{ $area.id }}"
+            {{ if ne $index 0 }}hidden{{ end }}
+          >
+
+            <div class="research-panel__text">
+              <p class="research-panel__eyebrow">
+                {{ if eq $.Language.Lang "pt" }}Linha de pesquisa{{ else }}Research area{{ end }}
+              </p>
+
+              <h1>{{ $area.title }}</h1>
+
+              <p class="research-panel__description">
+                {{ $area.text }}
+              </p>
+            </div>
+
+            <figure class="research-panel__image">
+              <img
+                src="{{ $area.detail_image | relURL }}"
+                alt="{{ $area.detail_alt }}"
+              >
+            </figure>
+
+          </article>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+
+  <section class="research-publications">
+    <div class="research-publications__inner">
+
+      <p class="research-publications__eyebrow">
+        {{ if eq .Language.Lang "pt" }}Produção científica{{ else }}Research output{{ end }}
+      </p>
+
+      <h2
+        data-related-title
+        data-related-prefix="{{ if eq .Language.Lang "pt" }}Publicações relacionadas:{{ else }}Related publications:{{ end }}"
+      >
+        {{ if eq .Language.Lang "pt" }}
+          Publicações relacionadas: {{ (index $areas 0).menu_title }}
+        {{ else }}
+          Related publications: {{ (index $areas 0).menu_title }}
+        {{ end }}
+      </h2>
+
+{{/* As publicações estão armazenadas no site em inglês */}}
+{{ $publicationPages := slice }}
+
+{{ range where site.Sites "Language.Lang" "en" }}
+  {{ $publicationPages = where .RegularPages "Section" "publication" }}
+{{ end }}
+
+{{ $publicationAreas := slice
+  (dict
+    "id" "systematics"
+    "empty_en" "No publications have been assigned to this research area yet."
+    "empty_pt" "Nenhuma publicação foi atribuída a esta linha de pesquisa ainda."
+  )
+  (dict
+    "id" "floristics"
+    "empty_en" "No publications have been assigned to this research area yet."
+    "empty_pt" "Nenhuma publicação foi atribuída a esta linha de pesquisa ainda."
+  )
+  (dict
+    "id" "plant-foods"
+    "empty_en" "No publications have been assigned to this research area yet."
+    "empty_pt" "Nenhuma publicação foi atribuída a esta linha de pesquisa ainda."
+  )
+}}
+
+<div class="research-publications__panels">
+
+  {{ range $publicationAreas }}
+    {{ $areaID := .id }}
+
+    {{ $areaPublications := where
+      $publicationPages
+      "Params.research_areas"
+      "intersect"
+      (slice $areaID)
+    }}
+
+    <div
+      class="research-publications__panel"
+      data-publication-panel="{{ $areaID }}"
+      {{ if ne $areaID "systematics" }}hidden{{ end }}
+    >
+
+      {{ if gt (len $areaPublications) 0 }}
+
+        <div class="research-publications__grid">
+
+          {{ range $areaPublications.ByDate.Reverse }}
+            <article class="research-publication-card">
+
+              <a
+                class="research-publication-card__link"
+                href="{{ .RelPermalink }}"
+              >
+
+
+{{ with .Resources.GetMatch "featured.*" }}
+  <figure class="research-publication-card__image">
+    <img
+      src="{{ .RelPermalink }}"
+      alt=""
+      loading="lazy"
+    >
+  </figure>
+{{ else }}
+  <figure
+    class="research-publication-card__image research-publication-card__image--placeholder"
+    aria-hidden="true"
+  >
+    <span>
+      {{ if eq $.Language.Lang "pt" }}
+        Publicação
+      {{ else }}
+        Publication
+      {{ end }}
+    </span>
+  </figure>
+{{ end }}
+
+                <div class="research-publication-card__content">
+
+                  <p class="research-publication-card__meta">
+                    <span>{{ .Date.Format "2006" }}</span>
+
+                    {{ with .Params.publication }}
+                      <span>{{ . | markdownify }}</span>
+                    {{ end }}
+                  </p>
+
+                  <h3>{{ .Title }}</h3>
+
+                  <span class="research-publication-card__action">
+                    {{ if eq $.Language.Lang "pt" }}
+                      Ver publicação
+                    {{ else }}
+                      View publication
+                    {{ end }}
+                    <span aria-hidden="true">→</span>
+                  </span>
+
+                </div>
+              </a>
+
+            </article>
+          {{ end }}
+
+        </div>
+
+      {{ else }}
+
+        <p class="research-publications__empty">
+          {{ if eq $.Language.Lang "pt" }}
+            {{ .empty_pt }}
+          {{ else }}
+            {{ .empty_en }}
+          {{ end }}
+        </p>
+
+      {{ end }}
+
+    </div>
+  {{ end }}
+</div>
+
+
+    </div>
+  </section>
+
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-research-page]").forEach(function (page) {
+      const triggers = Array.from(
+        page.querySelectorAll("[data-research-trigger]")
+      );
+
+      const backgrounds = page.querySelectorAll(
+        "[data-research-background]"
+      );
+
+      const panels = page.querySelectorAll(
+        "[data-research-panel]"
+      );
+
+      const publicationPanels = page.querySelectorAll(
+        "[data-publication-panel]"
+      );
+
+      const relatedTitle = page.querySelector("[data-related-title]");
+
+      function shufflePublicationCards(grid) {
+  const cards = Array.from(grid.children);
+
+  for (let i = cards.length - 1; i > 0; i -= 1) {
+    const randomIndex = Math.floor(
+      Math.random() * (i + 1)
+    );
+
+    [cards[i], cards[randomIndex]] =
+      [cards[randomIndex], cards[i]];
+  }
+
+  cards.forEach(function (card) {
+    grid.appendChild(card);
+  });
+}
+
+page
+  .querySelectorAll(".research-publications__grid")
+  .forEach(shufflePublicationCards);
+
+      function activateResearchArea(id) {
+        triggers.forEach(function (trigger) {
+          const selected = trigger.dataset.researchTrigger === id;
+
+          trigger.classList.toggle("is-active", selected);
+          trigger.setAttribute("aria-selected", selected ? "true" : "false");
+          trigger.setAttribute("tabindex", selected ? "0" : "-1");
+        });
+
+        backgrounds.forEach(function (background) {
+          background.hidden =
+            background.dataset.researchBackground !== id;
+        });
+
+        panels.forEach(function (panel) {
+          panel.hidden =
+            panel.dataset.researchPanel !== id;
+        });
+
+        publicationPanels.forEach(function (panel) {
+          panel.hidden =
+            panel.dataset.publicationPanel !== id;
+        });
+
+        const activeTrigger = triggers.find(function (trigger) {
+          return trigger.dataset.researchTrigger === id;
+        });
+
+        if (relatedTitle && activeTrigger) {
+          relatedTitle.textContent =
+            relatedTitle.dataset.relatedPrefix +
+            " " +
+            activeTrigger.textContent.trim();
+        }
+
+        page.dataset.activeResearch = id;
+      }
+
+      triggers.forEach(function (trigger, index) {
+        trigger.addEventListener("click", function () {
+          activateResearchArea(trigger.dataset.researchTrigger);
+        });
+
+        trigger.addEventListener("keydown", function (event) {
+          let nextIndex = index;
+
+          if (event.key === "ArrowRight") {
+            nextIndex = (index + 1) % triggers.length;
+          } else if (event.key === "ArrowLeft") {
+            nextIndex =
+              (index - 1 + triggers.length) % triggers.length;
+          } else if (event.key === "Home") {
+            nextIndex = 0;
+          } else if (event.key === "End") {
+            nextIndex = triggers.length - 1;
+          } else {
+            return;
+          }
+
+          event.preventDefault();
+
+          const nextTrigger = triggers[nextIndex];
+          activateResearchArea(nextTrigger.dataset.researchTrigger);
+          nextTrigger.focus();
+        });
+      });
+    });
+  });
+</script>
+
+{{ end }}

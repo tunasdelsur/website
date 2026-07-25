@@ -18,6 +18,9 @@ abstract: Recent studies have shown that a worldwide cultivated plant known as â
   out to better understand this taxon which has a hitherto unknown origin.
 tags:
 - prickly pear
+research_areas:
+- floristics
+- systematics
 links:
 - name: URL
   url: https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.510.3.8

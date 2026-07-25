@@ -12,7 +12,6 @@ authors:
 - Ana Paula Fortuna-Perez
 - Leandro Lacerda Giacomin
 - Milton Groppo
-- admin
 - Otávio Luis Marques da Silva
 - Thiago Cobra e Monteiro
 - Gustavo Hiroaki Shimizu
@@ -38,7 +37,8 @@ abstract: Apresentamos as principais decisões e modificações que serão
 tags:
 - Plant Nomenclature
 - Botanical Code
-
+research_areas:
+- systematics
 links:
 - name: URL
   url: https://www.scielo.br/j/hoehnea/a/4MWf4rCgQyMVgp4xbPKVp4c/?lang=pt

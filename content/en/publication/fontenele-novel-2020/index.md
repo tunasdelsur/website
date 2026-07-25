@@ -66,6 +66,8 @@ tags:
 - Plant Ecology
 - Plant Diversification
 - Plant Evolution
+research_areas:
+- systematics
 links:
 - name: URL
   url: https://www.mdpi.com/1999-4915/12/4/398
