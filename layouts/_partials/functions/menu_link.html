@@ -1,0 +1,42 @@
+{{/*
+  Build a language-aware menu URL that works with subdirectory baseURLs.
+  Pass: (dict "entry" $menuEntry "page" $page)
+*/}}
+{{- $entry := .entry -}}
+{{- $page := .page -}}
+{{- $home := site.Home.RelPermalink -}}
+{{- $url := "" -}}
+
+{{- if findRE `^#` $entry.URL -}}
+  {{- if not $page.IsHome -}}
+    {{- $url = $home -}}
+  {{- end -}}
+  {{- $url = printf "%s%s" $url $entry.URL -}}
+{{- else if findRE `^http` $entry.URL -}}
+  {{- $url = $entry.URL -}}
+{{- else if $entry.Page -}}
+  {{- $url = $entry.Page.RelPermalink -}}
+{{- else if $entry.URL -}}
+  {{- $path := $entry.URL -}}
+  {{- if or (eq $path "/") (eq $path $home) -}}
+    {{- $url = $home -}}
+  {{- else if strings.HasPrefix $path $home -}}
+    {{- $url = $path -}}
+  {{- else -}}
+    {{- $basePath := strings.TrimSuffix "/" ((urls.Parse site.BaseURL).Path) -}}
+    {{- if eq $basePath "/" -}}
+      {{- $basePath = "" -}}
+    {{- end -}}
+    {{- if and $basePath (hasPrefix $path $basePath) -}}
+      {{- $path = strings.TrimPrefix $path $basePath -}}
+    {{- end -}}
+    {{- $path = strings.TrimPrefix $path "/" -}}
+    {{- if eq $path "" -}}
+      {{- $url = $home -}}
+    {{- else -}}
+      {{- $url = printf "%s/%s" (strings.TrimSuffix "/" $home) $path -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $url -}}
