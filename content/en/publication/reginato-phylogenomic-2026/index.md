@@ -3,7 +3,7 @@ title: 'Phylogenomic use of low-copy nuclear markers from genome skimming data: 
   example from Melastomataceae'
 authors:
 - Marcelo Reginato
-- Matias Köhler
+- admin
 - Lucas C. Majure
 - Fabián A. Michelangeli
 date: '2026-01-01'
@@ -46,6 +46,8 @@ tags:
 - incongruence
 - introgression
 - phylogeny
+- systematics
+research_areas:
 - systematics
 links:
 - name: URL

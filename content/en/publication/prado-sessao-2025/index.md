@@ -12,6 +12,7 @@ authors:
 - Ana Paula Fortuna-Perez
 - Leandro Lacerda Giacomin
 - Milton Groppo
+- admin
 - Otávio Luis Marques da Silva
 - Thiago Cobra e Monteiro
 - Gustavo Hiroaki Shimizu

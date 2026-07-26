@@ -64,7 +64,7 @@ authors:
 - Martín Jaurena
 - Gabriela Jolochin
 - Liliana Katinas
-- Matias Köhler
+- admin
 - Leslie Landrum
 - Dióber B. Lucas
 - Sandra Lupo
@@ -148,6 +148,8 @@ tags:
 - grasslands
 - Pampean province
 - South America
+research_areas:
+- floristics
 links:
 - name: URL
   url: https://onlinelibrary.wiley.com/doi/abs/10.1002/tax.70085

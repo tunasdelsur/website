@@ -3,7 +3,7 @@ title: 'A Historical Perspective on the Biogeography of the Pampa Region: Imprin
   of Time and Origins of Its Flora'
 authors:
 - Mabel R. Baez-Lizarazo
-- Matias Köhler
+- admin
 - Marcelo Reginato
 date: '2024-01-01'
 publishDate: '2026-07-26T02:53:23.046553Z'
@@ -41,6 +41,8 @@ tags:
 - Open ecosystem
 - Plant diversity
 - Vascular plants
+research_areas:
+- systematics
 links:
 - name: URL
   url: https://doi.org/10.1007/978-3-031-42580-6_5
