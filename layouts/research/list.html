@@ -65,8 +65,7 @@
               <h1>{{ $area.title }}</h1>
 
               <p class="research-panel__description">
-                {{ $area.text }}
-              </p>
+                 {{ $area.text | markdownify }}
             </div>
 
             <figure class="research-panel__image">

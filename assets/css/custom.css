@@ -30,50 +30,46 @@
 
 
 /* ==================================================
-   HOMEPAGE: caixa da legenda
+   HOMEPAGE: LEGENDA
    ================================================== */
 
 .home-cover .prose {
-  width: fit-content;
-  max-width: 90vw;
+  width: fit-content !important;
+  max-width: min(90vw, 60rem) !important;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
 
-  color: white;
-  background: none;
+  margin: 0 auto !important;
+  padding: 0 !important;
 
-  text-align: center;
+  color: #fff !important;
+  background: transparent !important;
+  text-align: center !important;
+
   font-family: "Lora", serif !important;
-  font-size: 1.4rem;
-  font-weight: 250;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
+
+  /* Neutraliza as cores do Tailwind Typography. */
+  --tw-prose-body: #fff;
+  --tw-prose-headings: #fff;
+  --tw-prose-links: #fff;
+  --tw-prose-bold: #fff;
 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .home-cover .prose p {
-  margin: 0;
-  color: white;
+  margin: 0 !important;
 
-  font-family: "Lora", serif !important;
-  font-size: 30px !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: clamp(1.25rem, 2.3vw, 1.875rem) !important;
   font-weight: 400 !important;
-  line-height: normal;
-  letter-spacing: 1px !important;
+  font-style: normal !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.03em !important;
+  text-align: inherit !important;
 
-  webkit-text-stroke: 5px black !important;
-  webkit-text-stroke-width: 2px !important;
-  webkit-text-stroke-color: red !important;
+  -webkit-text-stroke: 0.1px #000;
   paint-order: stroke fill;
-}
-
-.home-cover .prose,
-.home-cover .prose p {
-  -webkit-text-stroke-width: 0.1px !important;
-  -webkit-text-stroke-color: black !important;
 }
 
 /* ==================================================
@@ -527,7 +523,7 @@ body:has(.research-page) .research-hero {
 /* Texto e título menores */
 
 .research-panel__text {
-  padding: clamp(44px, 5vw, 72px);
+  padding: clamp(32px, 4vw, 52px);
 }
 
 .research-panel h1 {
@@ -670,23 +666,28 @@ body:has(.research-page) .research-hero {
   animation: research-background-zoom 12s ease-out both;
 }
 
+### Filtro na imagem de fundo
+#.research-hero__overlay {
+#  position: absolute;
+#  inset: 0;
+#  z-index: -2;
+#  background:
+#    linear-gradient(
+#      90deg,
+#      rgba(8, 14, 11, 0.3) 0%,
+#      rgba(8, 14, 11, 0.1) 55%,
+#      rgba(8, 14, 11, 0.18) 100%
+#    ),
+#    linear-gradient(
+#      180deg,
+#      rgba(8, 14, 11, 0.12) 0%,
+#      rgba(8, 14, 11, 0.02) 48%,
+#      rgba(8, 14, 11, 0.28) 100%
+#    );
+#}
+
 .research-hero__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(8, 14, 11, 0.65) 0%,
-      rgba(8, 14, 11, 0.28) 55%,
-      rgba(8, 14, 11, 0.42) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(8, 14, 11, 0.25) 0%,
-      rgba(8, 14, 11, 0.06) 48%,
-      rgba(8, 14, 11, 0.58) 100%
-    );
+  background: transparent !important;
 }
 
 .research-hero__inner {
@@ -1588,4 +1589,254 @@ body:not(:has(.home-cover))
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* Centraliza somente as opções do menu de idiomas aberto */
+#site-header [data-hb-language-chooser] + ul li a {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  padding-right: 0.75rem !important;
+  padding-left: 0.75rem !important;
+  text-align: center !important;
+}
+
+/* ==================================================
+   ABOUT — TEXTOS DOS CARTÕES DE EDUCATION
+   ================================================== */
+
+#section-resume-biography-3
+  .md\:col-span-8
+  > div:has(> .grid)
+  > .grid
+  > div
+  .flex-1
+  > p {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* ==================================================
+   ABOUT — ÍCONES DE EDUCATION CENTRALIZADOS NA ALTURA
+   ================================================== */
+
+/* Alinha verticalmente os elementos dentro de cada cartão */
+#section-resume-biography-3
+  .md\:col-span-8
+  > div:has(> .grid)
+  > .grid
+  > div
+  > .flex {
+  align-items: center !important;
+}
+
+/* Garante especificamente a centralização vertical do ícone */
+#section-resume-biography-3
+  .md\:col-span-8
+  > div:has(> .grid)
+  > .grid
+  > div
+  > .flex
+  > :first-child {
+  align-self: center !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ==================================================
+   ABOUT — CARTÕES DE EDUCATION MAIS COMPACTOS
+   ================================================== */
+
+/* Reduz o espaço interno de cada cartão */
+#section-resume-biography-3
+  .md\:col-span-8
+  > div:has(> .grid)
+  > .grid
+  > div {
+  padding: 0.75rem 1rem !important;
+}
+
+/* Reduz a distância entre o ícone e o texto */
+#section-resume-biography-3
+  .md\:col-span-8
+  > div:has(> .grid)
+  > .grid
+  > div
+  > .flex {
+  gap: 0.65rem !important;
+}
+
+/* ==================================================
+   ABOUT — CONTEÚDO DOS CARTÕES DE EDUCATION
+   CENTRALIZADO VERTICALMENTE
+   ================================================== */
+
+/* Faz a linha com ícone e texto ocupar a altura útil do cartão */
+#section-resume-biography-3
+  .md\:col-span-8
+  > .mb-16:has(> .grid)
+  > .grid
+  > .group
+  > .flex {
+  flex: 1 1 auto !important;
+  align-items: center !important;
+}
+
+/* Centraliza verticalmente o conjunto de textos */
+#section-resume-biography-3
+  .md\:col-span-8
+  > .mb-16:has(> .grid)
+  > .grid
+  > .group
+  > .flex
+  > .flex-1 {
+  align-self: stretch !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+#section-resume-biography-3
+  .md\:col-span-4
+  .space-y-3
+  > p.text-gray-700,
+#section-resume-biography-3
+  .md\:col-span-4
+  .space-y-3
+  > p.text-gray-700
+  > a {
+  font-weight: 700 !important;
+}
+
+/* ==================================================
+   RESEARCH — PAINEL MAIS LARGO NO DESKTOP
+   ================================================== */
+
+@media (min-width: 1001px) {
+  .research-panel {
+    width: min(1280px, 100%);
+	
+	  grid-template-columns:
+      minmax(0, 1.2fr)
+      minmax(340px, 0.8fr);
+
+    gap: 28px;
+  }
+}
+
+/* Padding definitivo da caixa de texto — desktop */
+@media (min-width: 1001px) {
+  .research-page .research-panel .research-panel__text {
+    padding: 22px 32px !important;
+  }
+}
+
+/* ==================================================
+   PUBLICATIONS — AGRUPAMENTO POR ANO
+   ================================================== */
+
+.publication-year-group {
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+/* Linha que contém o ano e o traço horizontal */
+.publication-year-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  width: 100%;
+  margin: 0 0 1.75rem;
+}
+
+/* Ano */
+.publication-year-heading h2 {
+  flex: 0 0 auto;
+
+  margin: 0 !important;
+
+  color: #536554;
+
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+/* Linha horizontal depois do ano */
+.publication-year-heading::after {
+  content: "";
+
+  flex: 1;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(83, 101, 84, 0.48),
+      rgba(83, 101, 84, 0.05)
+    );
+}
+
+.publication-year-list {
+  width: 100%;
+}
+
+/* Espaço entre as publicações */
+.publication-entry {
+  margin-bottom: 2rem !important;
+}
+
+/* Remove o espaço após a última publicação de cada ano */
+.publication-entry:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Modo escuro */
+html.dark .publication-year-heading h2 {
+  color: #b8cbb9;
+}
+
+html.dark .publication-year-heading::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(184, 203, 185, 0.45),
+      rgba(184, 203, 185, 0.04)
+    );
+}
+
+/* Ajuste para celular */
+@media (max-width: 767px) {
+  .publication-year-group {
+    margin-bottom: 2.75rem;
+  }
+
+  .publication-year-heading {
+    gap: 0.85rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .publication-year-heading h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .publication-entry {
+    margin-bottom: 1.6rem !important;
+  }
+}
+
+/* Largura da lista geral de publicações */
+.publication-list-container {
+  width: min(850px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .publication-list-container {
+    width: 100%;
+  }
 }

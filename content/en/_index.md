@@ -10,8 +10,8 @@ sections:
     content:
       title: ""
       text: |-
-        Subtropical grassland permeated with prickly-pear cactus.
-        Caçapava do Sul, RS, Brazil © M.Köhler
+        Subtropical grassland studded with prickly-pear cactus.\
+        Caçapava do Sul, RS, Brazil. © M.Köhler
     design:
       css_class: home-cover
       background:

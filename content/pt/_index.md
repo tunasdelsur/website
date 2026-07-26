@@ -10,8 +10,8 @@ sections:
     content:
       title: ""
       text: |-
-        Campo subtropical permeado de tunas do gênero *Opuntia*.
-        Caçapava do Sul, RS, Brazil © M.Köhler
+        Campo subtropical permeado de tunas do gênero *Opuntia*. \
+        Caçapava do Sul, RS, Brazil. © M.Köhler
     design:
       css_class: home-cover
       background:

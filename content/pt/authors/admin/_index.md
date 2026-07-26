@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Assistant Professor | Professor Assistente
+role: Professor Assistente
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -62,11 +62,11 @@ interests:
   - Ecologia Vegetal
   - Botânica Econômica
   - Pessoas e Plantas
-  - Como você pode ver, tudo sobre plantas 😁
+  - Como dá para ver, quase tudo sobre plantas 😃
 
 education:
-  - area: Doutorado em Botânica
-    institution: Universidade Federal do Rio Grande do Sul
+  - area: Ph.D. em Botânica
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2017-04-01
     date_end: 2021-03-01
     summary: |
@@ -75,14 +75,14 @@ education:
       text: 'Ler Tese'
       url: 'https://lume.ufrgs.br/bitstream/handle/10183/265067/001168532.pdf'
   - area: Mestrado em Botânica
-    institution: Universidade Federal do Rio Grande do Sul
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2017-03-31
     date_end: 2015-04-01
     summary: |
       Ecologia Química de Plantas
 
-  - area: Bacharelado em Biologia
-    institution: Universidade Federal do Rio Grande do Sul
+  - area: Graduado em Biologia
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2010-01-01
     date_end: 2014-12-31
     summary: |
@@ -185,4 +185,4 @@ languages:
 ---
 
 ## 
-Sou um Biólogo Evolutivo, melhor definido como Botânico. Atualmente, sou Professor Adjunto na Universidade Federal da Fronteira Sul (RS, Brasil). Minha pesquisa foca nas relações evolutivas de plantas usando métodos filogenéticos moleculares, assim como dados morfológicos, citológicos e ecológicos para abordar questões relacionadas à história biogeográfica dos organismos, montagem de comunidades, padrões de diversificação, evolução morfológica e genômica, origem e circunscrição de espécies. Você encontrará mais informações navegando nesta página (em construção), e se tiver alguma dúvida, não hesite em me contatar!
+Sou Botânico, atualmente Professor Assistente na Universidade Federal da Fronteira Sul (UFFS, Campus Erechim, RS, Brasil). Tenho interesse nas relações evolutivas das plantas usando métodos filogenéticos moleculares integradas a dados morfológicos, citológicos e ecológicos. Com essas abordagens, procuro entender questões relacionadas à história biogeográfica, aos padrões de diversificação, à evolução morfológica e genômica, à montagem de comunidades e à origem e delimitação de espécies. Você encontrará mais informações navegando por este site (em construção). Em caso de dúvidas ou interesse em minha pesquisa, não hesite em entrar em contato!

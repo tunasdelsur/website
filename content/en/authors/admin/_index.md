@@ -62,11 +62,11 @@ interests:
   - Plant Ecology
   - Economic Botany
   - People and Plants
-  - As you see, it’s all about plants 😁
+  - As you see, it’s all about plants 😄
 
 education:
   - area: PhD in Botany
-    institution: Universidade Federal do Rio Grande do Sul
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2017-04-01
     date_end: 2021-03-01
     summary: |
@@ -75,14 +75,14 @@ education:
       text: 'Read Thesis'
       url: 'https://lume.ufrgs.br/bitstream/handle/10183/265067/001168532.pdf'
   - area: MSc in Botany
-    institution: Universidade Federal do Rio Grande do Sul
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2017-03-31
     date_end: 2015-04-01
     summary: |
       Plant Chemical Ecology
 
   - area: BSc Biology
-    institution: Universidade Federal do Rio Grande do Sul
+    institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date_start: 2010-01-01
     date_end: 2014-12-31
     summary: |
@@ -185,4 +185,4 @@ languages:
 ---
 
 ##
-I am an evolutionary biologist best defined as a Botanist. I am currently an Assistant Professor at the Universidade Federal da Fronteira Sul (RS, Brazil). My research focuses on the evolutionary relationships of plants using molecular phylogenetic methods, as well as morphology, cytology, and ecological data to address questions related to biogeographic history, community assembly, diversification, morphological and genome evolution, species origin, and species boundaries within groups. You will find more information browsing this page (under construction), and if you have any questions, don’t hesitate to contact me!
+I am a plant evolutionary biologist, best defined as a Botanist. I am currently an Assistant Professor at the Universidade Federal da Fronteira Sul (UFFS) in Rio Grande do Sul (RS, Brazil). My research investigates plant evolutionary relationships using molecular phylogenetic methods, integrated with morphological, cytological, ecological, and genomic data. I use these approaches to address questions related to biogeographic history, community assembly, diversification, morphological and genome evolution, speciation, and species boundaries. You can learn more about my research by exploring this website (under construction). Please feel free to contact me with any questions!
