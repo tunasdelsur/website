@@ -1067,6 +1067,10 @@ body:has(.research-page) .research-hero {
     animation: none;
   }
 
+.research-publication-card__slide {
+  transition: none;
+}
+
   .research-panel__image img,
   .research-switcher__button {
     transition: none;
@@ -1114,22 +1118,37 @@ body:has(.research-page) .research-hero {
 }
 
 .research-publication-card__image {
+  position: relative;
   aspect-ratio: 16 / 10;
   margin: 0;
   overflow: hidden;
   background: rgba(24, 32, 28, 0.08);
 }
 
-.research-publication-card__image img {
+.research-publication-card__slide {
+  position: absolute;
+  inset: 0;
+
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
+
   object-fit: cover;
-  transition: transform 500ms ease;
+  opacity: 0;
+  transform: scale(1);
+
+  transition:
+    opacity 900ms ease,
+    transform 500ms ease;
+}
+
+.research-publication-card__slide.is-active {
+  z-index: 1;
+  opacity: 1;
 }
 
 .research-publication-card:hover
-.research-publication-card__image img {
+.research-publication-card__slide.is-active {
   transform: scale(1.025);
 }
 

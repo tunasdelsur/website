@@ -156,13 +156,32 @@
               >
 
 
+{{ $cardImages := slice }}
+
 {{ with .Resources.GetMatch "featured.*" }}
-  <figure class="research-publication-card__image">
-    <img
-      src="{{ .RelPermalink }}"
-      alt=""
-      loading="lazy"
-    >
+  {{ $cardImages = $cardImages | append . }}
+{{ end }}
+
+{{ with .Resources.Match "carousel-*.*" }}
+  {{ $cardImages = $cardImages | append . }}
+{{ end }}
+
+{{ if gt (len $cardImages) 0 }}
+  <figure
+    class="research-publication-card__image"
+    data-publication-slideshow
+    aria-hidden="true"
+  >
+    {{ range $imageIndex, $image := $cardImages }}
+      <img
+        class="research-publication-card__slide{{ if eq $imageIndex 0 }} is-active{{ end }}"
+        data-publication-slide
+        src="{{ $image.RelPermalink }}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      >
+    {{ end }}
   </figure>
 {{ else }}
   <figure
@@ -272,6 +291,64 @@ page
   .querySelectorAll(".research-publications__grid")
   .forEach(shufflePublicationCards);
 
+const reduceMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
+if (!reduceMotion) {
+  page
+    .querySelectorAll("[data-publication-slideshow]")
+    .forEach(function (slideshow, slideshowIndex) {
+      const slides = Array.from(
+        slideshow.querySelectorAll("[data-publication-slide]")
+      );
+
+      if (slides.length < 2) {
+        return;
+      }
+
+      const card = slideshow.closest(
+        ".research-publication-card"
+      );
+
+      let currentSlide = 0;
+
+      function rotatePublicationSlide() {
+        const hiddenPanel = slideshow.closest("[hidden]");
+
+        const interactionPaused =
+          card &&
+          card.matches(":hover, :focus-within");
+
+        if (
+          document.hidden ||
+          hiddenPanel ||
+          interactionPaused
+        ) {
+          return;
+        }
+
+        slides[currentSlide].classList.remove("is-active");
+
+        currentSlide =
+          (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("is-active");
+      }
+
+      const initialDelay =
+        1800 + (slideshowIndex % 5) * 450;
+
+      window.setTimeout(function () {
+        rotatePublicationSlide();
+
+        window.setInterval(
+          rotatePublicationSlide,
+          5200
+        );
+      }, initialDelay);
+    });
+}
       function activateResearchArea(id) {
         triggers.forEach(function (trigger) {
           const selected = trigger.dataset.researchTrigger === id;
