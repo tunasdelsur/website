@@ -16,7 +16,7 @@ authors:
 - Mabel Rocio Báez-Lizarazo
 - Mariana Beal Neves
 - Martin Grings
-- Matias Köhler
+- admin
 - Michelle Helena Nervo
 - Philipy Alexandre Pereira Weber
 date: '2018-01-01'
@@ -24,6 +24,8 @@ publishDate: '2026-07-27T00:58:52.907004Z'
 publication_types:
 - manuscript
 publication: '*FIELD Guides*'
+research_areas:
+- floristics
 links:
 - name: URL
   url: https://science.fieldmuseum.org/pt_BR/fieldguides/guias/guia/953

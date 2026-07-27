@@ -16,7 +16,7 @@ authors:
 - Mabel Rocio Báez-Lizarazo
 - Mariana Beal Neves
 - Martin Grings
-- Matias Köhler
+- admin
 - Michelle Helena Nervo
 - Philipy Alexandre Pereira Weber
 date: '2018-01-01'
