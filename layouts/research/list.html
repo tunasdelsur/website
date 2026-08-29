@@ -61,13 +61,14 @@
               <p class="research-panel__eyebrow">
                 {{ if eq $.Language.Lang "pt" }}Linha de pesquisa{{ else }}Research area{{ end }}
               </p>
-
+            
               <h1>{{ $area.title }}</h1>
-
-              <p class="research-panel__description">
-                 {{ $area.text | markdownify }}
+            
+              <div class="research-panel__description">
+                {{ $area.text | markdownify }}
+              </div>
             </div>
-
+            
             <figure class="research-panel__image">
               <img
                 src="{{ $area.detail_image | relURL }}"
