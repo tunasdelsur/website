@@ -43,6 +43,6 @@ pt:
       - name: Publicações
         pageRef: /publication/
         weight: 12
-      - name: Notas
-        pageRef: /notes/
-        weight: 13
+      #- name: Notas
+      #  pageRef: /notes/
+      #  weight: 13

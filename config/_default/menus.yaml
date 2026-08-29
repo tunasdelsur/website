@@ -17,9 +17,9 @@ main:
   - name: Publications
     pageRef: /publication/
     weight: 12
-  - name: Notes
-    pageRef: /notes/
-    weight: 13
+  #- name: Notes
+  #  pageRef: /notes/
+  #  weight: 13
   #- name: Blog
   #  url: /post/
   #  weight: 12
